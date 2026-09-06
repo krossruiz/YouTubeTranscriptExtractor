@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popupStylesheet.css">
+  </head>
+  <body>
+    <div id="popupContainer">
+      <div class="checkboxAndLabelContainer">
+        <input type="checkbox" id="includeTitleCheckbox" checked />
+        <label for="includeTitleCheckbox">Include Title</label>
+      </div>
+      <div class="checkboxAndLabelContainer">
+        <input type="checkbox" id="includeURLCheckbox" checked />
+        <label for="includeURLCheckbox">Include URL</label>
+      </div>
+      <div class="checkboxAndLabelContainer">
+        <input type="checkbox" id="includeTimestampsCheckbox" checked />
+        <label for="includeTimestamps">Include Timestamps</label>
+      </div>
+      <button id="extractTranscriptsButton">Extract Transcript</button>
+      <button id="checkIfTranscriptElementExistsButton">Check If Transcript Element Exists</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

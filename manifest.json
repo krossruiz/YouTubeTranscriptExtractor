@@ -1,0 +1,19 @@
+{
+    "name": "YouTube Transcript Extractor",
+    "description": "Extracts YouTube video transcripts",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/watch?v=*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+      "default_popup": "main.html"
+    }
+}
